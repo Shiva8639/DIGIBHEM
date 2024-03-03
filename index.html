@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caculator</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!--     <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hidebutton").click(function () {
+          $(" .check").toggleClass("hide");
+        });
+      });
+
+      // function myFunc() {
+      //   var para = document.getElementById("hidebutton");
+      //   para.classList.toggle(".hide");
+      // }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h1>Black-White Caculator</h1>
+
+        <div class="output">
+          <input type="text" id="screen" class="form-control screen" />
+          <p id="history"></p>
+          <p id="current"></p>
+        </div>
+
+        <input type="button" placeholder="-" id="hidebutton" class="d-grid"></input>
+
+        <div class="interface">
+          <button class="btn btn-danger check hide" value="cos">cos</button>
+          <button class="btn btn-danger check hide" value="sin">sin</button>
+          <button class="btn btn-danger check hide" value="tan">tan</button>
+          <button class="btn btn-white check hide" value="ln">log</button>
+
+          <button class="btn btn-white check hide" value="(">(</button>
+          <button class="btn btn-white check hide" value=")">)</button>
+          <button class="btn btn-white check hide" value="√">√</button>
+          <button class="btn btn-white check hide" value="x2">x2</button>
+
+          <button class="btn btn-white btn-outline-warning" value="AC">
+            AC
+          </button>
+          <button class="btn btn-white btn-outline-warning" value="%">%</button>
+          <button class="btn btn-outline-warning" value="CE">⌫</button>
+          <button class="btn btn-outline-warning" value="/">÷</button>
+
+          <button class="btn btn-white" value="1">1</button>
+          <button class="btn btn-white" value="2">2</button>
+          <button class="btn btn-white" value="3">3</button>
+          <button class="btn btn-outline-warning" value="*">X</button>
+
+          <button class="btn btn-white" value="4">4</button>
+          <button class="btn btn-white" value="5">5</button>
+          <button class="btn btn-white" value="6">6</button>
+          <button class="btn btn-outline-warning" value="-">-</button>
+
+          <button class="btn btn-white" value="7">7</button>
+          <button class="btn btn-white" value="8">8</button>
+          <button class="btn btn-white" value="9">9</button>
+          <button class="btn btn-outline-warning" value="+">+</button>
+
+          <button class="btn btn-white" value="00">00</button>
+          <button class="btn btn-white" value="0">0</button>
+          <button class="btn btn-white" value=".">.</button>
+          <!-- <button class="btn btn-white" value="">Ans</button> -->
+          <button class="btn btn-outline-warning" value="=">=</button>
+        </div>
+      </div>
+    </div>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
